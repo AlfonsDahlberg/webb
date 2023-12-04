@@ -1,0 +1,169 @@
+
+/* Stylar bodyn i html koden*/
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+    background: #222;
+    /* använder mig av unsplash för att vi en "random" bild med temat "nature */
+    background-image: url('https://source.unsplash.com/1600x900/?landscape');
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-size: 120%
+}
+
+/* stylar meny baren */
+.namnMeny {
+    position: fixed;
+    background: #000000d0;
+    color: white;
+    padding: 2.2em;
+    width: 100%;
+    max-width: 100%; 
+    top: 0px;
+    left: 0px;
+    
+}
+/* stylar cardet som innehållar all display för sök fält och väder datan */
+.card {
+    background: #000000d0;
+    color: white;
+    padding: 2em;
+    border-radius: 30px;
+    width: 100%;
+    max-width: 420px;
+    margin: 1em;
+}
+
+.search {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+/* stylar SÖK knappen */
+button {
+    margin: 0.5em;
+    border-radius: 50%;
+    border: none;
+    height: 43px;
+    width: 43px;
+    outline: none;
+    background: #7c7c7c2b;
+    color: white;
+    cursor: pointer;
+    transition: 0.22s ease-in-out;
+}
+
+input.search-bar {
+    border: none;
+    outline: none;
+    padding: 0.4em 1em;
+    border-radius: 25px;
+    background: #7c7c7c2b;
+    color: white;
+    font-family: inherit;
+    font-size: 105%;
+    width: calc(100% - 100px);
+}
+
+button:hover {
+    background: #7c7c7c6b;
+}
+
+h1.temp {
+    margin: 0;
+}
+
+.vader.laddar {
+    visibility: hidden;
+    max-height: 25px;
+}
+
+.vader.laddar:after {
+    visibility: visible;
+    content: "Type your desired city";
+    color: white;
+    position: absolute;
+    top: 55%; 
+    left: 50%; 
+    transform: translate(-50%, -50%); 
+    text-align: center; 
+}
+/* 
+stylar diven för meny knapparna contact och weather. */
+.btn-group {
+    display: flex;
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 10px;
+}
+
+.btn-Contact {
+    background: rgba(0, 0, 0, 0.169);
+    color: #fff;
+    height: 43px;
+    width: 100px;
+    font-size: 14px;
+
+}
+
+.btn-Weather {
+    background: rgba(0, 0, 0, 0.169);
+    color: #fff;
+    height: 43px;
+    width: 100px;
+    font-size: 14px;
+
+}
+
+/* alla @media ändrar storleken på knapparna högst upp för att passa olika skärm storlekar. */
+
+@media screen and (max-width: 600px) {
+    .btn-Weather {
+        font-size: large;
+        width: 150px;
+        
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .btn-Contact {
+        font-size: large;
+        width: 150px;
+    }
+}
+
+@media screen and (min-width: 601px) and (max-width: 1200px) { 
+    .btn-Weather {
+        font-size: 25px;
+        width: 200px;
+        
+    }
+}
+
+@media screen and (min-width: 601px) and (max-width: 1200px) { 
+    .btn-Contact {
+        font-size: 25px;
+        width: 200px;
+        
+    }
+}
+
+ @media screen and (min-width: 1200px) { 
+    .btn-Weather {       
+        font-size: 14px;
+        width: 100px;
+    }
+}
+
+@media screen and (min-width: 1200px) { 
+    .btn-Contact {
+        font-size: 14px;
+        width: 100px;
+        
+    }
+} 
