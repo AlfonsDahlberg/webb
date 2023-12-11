@@ -1,0 +1,75 @@
+
+/* stylar bodyn */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f8f9fa;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    background-image: url('https://source.unsplash.com/1600x900/?weather');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+/* stylar containern */
+.container {
+    max-width: 70%; 
+    margin: 5% auto;
+    text-align: center;
+    background: #000000d0;
+    padding: 2%;
+    border-radius: 2%;
+}
+
+h1 {
+    color: #ffffff;
+}
+
+p {
+    color: #ffffff;
+}
+
+/* media query för mindre skärmar. mer specefikt för kontakt knappen*/
+@media only screen and (max-width: 600px) {
+    .container {
+        max-width: 90%; 
+    }
+
+    .contact-button {
+        display: block;
+        width: 80%; 
+        margin: 2% auto; 
+    }
+}
+
+/* stylar knappen som tar dig till gmail för att maila mig*/
+.contact-button {
+    display: inline-block;
+    background-color: #000000;
+    color: #fff;
+    text-decoration: none;
+    padding: 1.5% 3%; 
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+/* färg för när man hoverar över knappen*/
+.contact-button:hover {
+    background-color: #7c7c7c6b;
+}
+/* stylar knappen som tar dig tillbiaka till mains sidan*/
+.go-back-button {
+    display: block;
+    margin: 3% auto; 
+    background-color: #000000;
+    color: #fff;
+    text-decoration: none;
+    padding: 1% 2.6%; 
+    border-radius: 8.5px;
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+}
+/* färg för när man hoverar på knappen */
+.go-back-button:hover {
+    background-color: #7c7c7c6b;
+}
+
+
